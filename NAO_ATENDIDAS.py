@@ -6,9 +6,6 @@ from io import BytesIO
 import altair as alt
 import datetime
 
-pip install matplotlib
-
-
 # Função para carregar os dados
 @st.cache_data
 def load_data(file_path):
