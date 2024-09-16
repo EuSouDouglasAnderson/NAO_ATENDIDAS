@@ -1,0 +1,28 @@
+import altair as alt
+import pandas as pd
+import streamlit as st
+
+graf_barras = alt.Chart(data).mark_bar().encode(
+	x= 'Destino'
+	y= 'Status'
+	color= 'a'
+	tooltip= ['a','b']
+
+)
+rotulo = graf_barras.mark_text(
+	dy= -6
+	size = 17
+).encode(
+	text= 'b'
+)
+
+st.altair_chart(graf_barras+rotulo, use_container_width= True)
+
+graf_area = alt.Chart(data).mark_area(
+
+	color = 'ligthblue'
+	interpolate='step-after'
+	line=true
+	
+
+)
