@@ -20,7 +20,7 @@ def load_data(file_path):
     return data
 
 # Carregar os dados
-dados = load_data("chamadas.csv")
+dados = load_data("chamadas_nao_atendidas.csv")
 
 # Configurações de estilo
 cor_grafico = '#FFFFFF'
